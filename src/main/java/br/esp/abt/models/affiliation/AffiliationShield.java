@@ -1,8 +1,8 @@
-package br.esp.abt.models.filiado;
+package br.esp.abt.models.affiliation;
 
 import io.yawp.repository.shields.Shield;
 
-public class FiliadoShield extends Shield<Filiado> {
+public class AffiliationShield extends Shield<Affiliation> {
 
     @Override
     public void defaults() {

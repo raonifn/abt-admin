@@ -1,8 +1,8 @@
-package br.esp.abt.models.escola;
+package br.esp.abt.models.affiliation;
 
 import io.yawp.repository.shields.Shield;
 
-public class EscolaShield extends Shield<Escola> {
+public class AffiliatedGymnShield extends Shield<AffiliatedGymn> {
 
     @Override
     public void defaults() {

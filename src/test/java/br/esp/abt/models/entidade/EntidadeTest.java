@@ -4,6 +4,7 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
+import br.esp.abt.models.organization.Organization;
 import br.esp.abt.utils.EndpointTestCase;
 
 public class EntidadeTest extends EndpointTestCase {
@@ -12,7 +13,7 @@ public class EntidadeTest extends EndpointTestCase {
     public void testCreate() {
         // TODO Auto-generated method stub
         String json = post("/entidades", "{}");
-        Entidade entidade = from(json, Entidade.class);
+        Organization entidade = from(json, Organization.class);
 
         assertNotNull(entidade);
     }

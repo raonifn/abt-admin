@@ -1,8 +1,8 @@
-package br.esp.abt.models.entidade;
+package br.esp.abt.models.organization;
 
 import io.yawp.repository.shields.Shield;
 
-public class EntidadeShield extends Shield<Entidade> {
+public class OrganizationShield extends Shield<Organization> {
 
     @Override
     public void defaults() {

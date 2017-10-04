@@ -1,8 +1,8 @@
-package br.esp.abt.models.anofiliacao;
+package br.esp.abt.models.organization;
 
 import io.yawp.repository.shields.Shield;
 
-public class AnoFiliacaoShield extends Shield<AnoFiliacao> {
+public class GymnShield extends Shield<Gymn> {
 
     @Override
     public void defaults() {

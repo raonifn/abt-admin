@@ -1,6 +1,6 @@
-package br.esp.abt.models.escola;
+package br.esp.abt.models.organization;
 
-public class Intrutor {
+public class Intructor {
 
   private String nome;
   
