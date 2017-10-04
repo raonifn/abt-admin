@@ -17,6 +17,8 @@ public class Escola {
     @Id
     private IdRef<Entidade> idEntidade;
     
+    private boolean active;
+    
     private String nome;
     
     @Json
@@ -52,5 +54,14 @@ public class Escola {
 
     public void setNome(String nome) {
       this.nome = nome;
-    } 
+    }
+
+    public boolean isActive() {
+      return active;
+    }
+
+    public void setActive(boolean active) {
+      this.active = active;
+    }
+    
 }

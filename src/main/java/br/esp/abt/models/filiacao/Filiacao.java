@@ -2,12 +2,11 @@ package br.esp.abt.models.filiacao;
 
 import java.util.Date;
 
-import br.esp.abt.models.escola.Escola;
+import br.esp.abt.models.anofiliacao.AnoFiliacao;
 import br.esp.abt.models.filiado.Filiado;
 import io.yawp.repository.IdRef;
 import io.yawp.repository.annotations.Endpoint;
 import io.yawp.repository.annotations.Id;
-import io.yawp.repository.annotations.Index;
 
 @Endpoint(path = "/filiacoes")
 public class Filiacao {
@@ -15,14 +14,19 @@ public class Filiacao {
     @Id
     private IdRef<Filiacao> id;
     
+    private IdRef<AnoFiliacao> anoFiliacao;
+    
     private IdRef<Filiado> idFiliado;
-    
-    private IdRef<Escola> escola;
-    
-    @Index
-    private Integer ano;
-    
+        
     private Date dataConfirmacaoPagamento;
+    
+    public IdRef<AnoFiliacao> getAnoFiliacao() {
+      return anoFiliacao;
+    }
+
+    public void setAnoFiliacao(IdRef<AnoFiliacao> anoFiliacao) {
+      this.anoFiliacao = anoFiliacao;
+    }
 
     public IdRef<Filiacao> getId() {
       return id;
@@ -40,21 +44,6 @@ public class Filiacao {
       this.idFiliado = idFiliado;
     }
 
-    public IdRef<Escola> getEscola() {
-      return escola;
-    }
-
-    public void setEscola(IdRef<Escola> escola) {
-      this.escola = escola;
-    }
-
-    public Integer getAno() {
-      return ano;
-    }
-
-    public void setAno(Integer ano) {
-      this.ano = ano;
-    }
 
     public Date getDataConfirmacaoPagamento() {
       return dataConfirmacaoPagamento;
